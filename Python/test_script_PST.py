@@ -7,7 +7,7 @@ Implementation of Phase Stretch Transform (PST) in Python
 PST or Phase Stretch Transform is a physics-inspired edge detection algorithm that detects intensity variations in an image [1,2]. 
 PST operates on an input greyscale image and outputs an edge map. The output egde map, same as the size of the input image, is binary with 
 pixel value equal to 1 where the PST operator finds sharp transitions in intensity and 0 elsewhere. The PST operator can also return 
-a continous level edge map (i.e. without thresholding and morphological operations)
+a continuous level edge map (i.e. without thresholding and morphological operations)
 
 The PST operator cascades Gaussian smoothing, application of a nonlinear frequency-dependent phase kernel in frequency domain and a phase detection in spatial domain.
 To implement the first step, an isotropic gaussian filter with a user defined scale (LPF) is designed and operated on the image. 
